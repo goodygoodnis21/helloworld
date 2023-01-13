@@ -1,7 +1,10 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showIcon(IconNames.Happy)
+    basic.showLeds(`
+        . . # . .
+        . # # # .
+        # # # # #
+        # . . . #
+        # . . . #
+        `)
 })
-input.onButtonPressed(Button.B, function () {
-    basic.showIcon(IconNames.Sad)
-})
-basic.showIcon(IconNames.Heart)
+music.playMelody("C5 B A G F E D C ", 120)
